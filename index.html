@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Tells the web browser that this document uses modern HTML5 -->
+<html lang="en">
+    <head>
+        <!-- Sets basic webpage settings like character set and title -->
+        <meta charset="UTF-8">
+        <title>D3 Page Template</title>
+        <!-- Ensures the page looks good on mobile screens by matching screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Links an external CSS file for main styling -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        
+        <!-- Internal CSS style rules specific to this page -->
+        <style>
+            body {
+                /* Gives the background of the page a neutral gray color */
+                background-color: #aaa;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Main container wrapper that holds the structured content -->
+        <div id="main-container">
+            
+            <!-- Overall project title -->
+            <div class="title">Martini-Glass narative example</div>
+            
+            <!-- Article element representing a self-contained story scene/slide -->
+            <article id="scene">
+                <!-- Title for the specific scene -->
+                <div id="scene-title">Scene 1 - blah blah</div>
+                
+                <!-- Text area reserved for the narrative or story text -->
+                <section id="scene-narative">TBD</section>
+
+                <nav class="card flex-space-between white-bkg">
+                        <button id="btn-prev" class="btn">Previous</button>
+                        <button id="btn-next" class="btn">Next</button>
+                </nav>
+                
+                <!-- Section container designed to center the chart or visual -->
+                <section id="graph-section">
+                    <!-- SVG element where the actual drawing or graph happens -->
+                    <svg id="graph"
+                        style="background-color:white;display:block;margin-left:auto;margin-right:auto;"
+                        class="card"
+                        height="400" width="600"
+                        >
+                    </svg>
+                </section>
+            </article> 
+        </div>
+        
+        <!-- Extra heading displayed at the bottom -->
+        <h1 style="color: rgb(30, 0, 255)">D3 Page Template</h1>
+        
+        <!-- Script tags: Loads JavaScript files at the end so the page content loads first -->
+        <!-- 1. Imports the D3 library for visual data processing -->
+        <script type="text/javascript" src="js/d3.js"></script>
+        <!-- 2. Runs your custom JavaScript logic -->
+        <script src="js/script.js" type="text/javascript"> </script>
+    </body>
+</html>
